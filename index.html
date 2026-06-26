@@ -3,17 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather Pattern Analysis</title>
+    <title>Sindri Weather Analysis 2026</title>
     
+    <!-- Link to our CSS file for styling -->
     <link rel="stylesheet" href="style.css">
     
+    <!-- This brings in Chart.js so we can draw graphs easily -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
 
     <div class="container">
         <h1>Weather Pattern Analysis 🌤️</h1>
+        <p class="location-subtitle">Sindri, Jharkhand (Mid-2026 Forecast)</p>
         
+        <!-- This section will show our calculated averages -->
         <div class="summary-box">
             <h2>Average Weather Data</h2>
             <p id="avg-temp">Average Temperature: </p>
@@ -21,11 +25,13 @@
             <p id="tot-rain">Total Rainfall: </p>
         </div>
 
+        <!-- This is where the graph will appear -->
         <div class="chart-container">
             <canvas id="weatherChart"></canvas>
         </div>
     </div>
     
+    <!-- Link to our JavaScript file that does all the work -->
     <script src="script.js"></script>
 
 </body>
