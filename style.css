@@ -7,7 +7,7 @@ body {
 
 .container {
     max-width: 800px;
-    margin: 0 auto; /* Centers the box on the screen */
+    margin: 0 auto;
     background: white;
     padding: 20px;
     border-radius: 10px;
@@ -17,10 +17,19 @@ body {
 h1 {
     text-align: center;
     color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.location-subtitle {
+    text-align: center;
+    color: #7f8c8d;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 
 .summary-box {
-    background-color: #e3f2fd; /* Light blue background */
+    background-color: #e3f2fd; 
     padding: 15px;
     border-radius: 8px;
     margin-bottom: 20px;
@@ -35,4 +44,5 @@ h1 {
 
 .chart-container {
     margin-top: 20px;
+}    margin-top: 20px;
 }
