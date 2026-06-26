@@ -1,12 +1,12 @@
-// 1. Our basic weather dataset
+// 1. Updated 2026 weather dataset for Sindri, Jharkhand
 const weatherData = [
-    { date: '2024-05-01', temperature: 32, humidity: 45, rainfall: 0 },
-    { date: '2024-05-02', temperature: 34, humidity: 40, rainfall: 0 },
-    { date: '2024-05-03', temperature: 29, humidity: 65, rainfall: 12 },
-    { date: '2024-05-04', temperature: 27, humidity: 75, rainfall: 25 },
-    { date: '2024-05-05', temperature: 30, humidity: 55, rainfall: 5 },
-    { date: '2024-05-06', temperature: 31, humidity: 50, rainfall: 0 },
-    { date: '2024-05-07', temperature: 28, humidity: 70, rainfall: 10 }
+    { date: '2026-06-26', temperature: 36, humidity: 60, rainfall: 0 },
+    { date: '2026-06-27', temperature: 37, humidity: 57, rainfall: 5 },
+    { date: '2026-06-28', temperature: 36, humidity: 61, rainfall: 12 },
+    { date: '2026-06-29', temperature: 35, humidity: 67, rainfall: 20 },
+    { date: '2026-06-30', temperature: 34, humidity: 72, rainfall: 45 }, // Heavy thunderstorm
+    { date: '2026-07-01', temperature: 32, humidity: 75, rainfall: 15 },
+    { date: '2026-07-02', temperature: 33, humidity: 73, rainfall: 10 }
 ];
 
 // 2. Variables to hold our totals
@@ -46,7 +46,8 @@ const weatherChart = new Chart(ctx, {
             borderColor: '#ff5722', // Orange line color
             backgroundColor: 'rgba(255, 87, 34, 0.2)', // Light orange fill under the line
             borderWidth: 2,
-            fill: true
+            fill: true,
+            tension: 0.3 // Adds a slight curve to the line for a modern look
         }]
     },
     options: {
